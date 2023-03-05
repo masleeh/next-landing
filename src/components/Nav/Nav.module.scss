@@ -1,0 +1,26 @@
+nav {
+    background-color: $back1;
+    height: 72px;
+    width: 100%;
+        
+    .nav-row {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-title {
+        font-weight: 700;
+        color: $mainblue;
+        font-size: 33.2308px;
+        line-height: 40px;
+    }
+
+    .nav-office {
+        font-weight: 500;
+        font-size: 20px;
+        color: $maintext;
+        cursor: pointer;
+    }
+}

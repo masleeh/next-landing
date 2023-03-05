@@ -1,0 +1,121 @@
+// Variables 
+$back1: #F8FAFC;
+$mainblue: #0D99FF;
+$maintext: #212121;
+$subtext: #555D65;
+$actionback: #0087E8;
+$footeremail: #0A80D6;
+
+// Mixins
+@mixin FlexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin FlexBetween() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Colors
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: $footeremail;
+}
+
+// Responsive design
+
+@media screen and (max-width: 1072px) {
+    .container {
+        padding: 0 24px 0 24px;
+    }
+}
+
+
+// Roots
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1072px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: $back1;
+}
+
+//  Spinner
+
+.spinner {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    border: 7px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spinner 0.7s linear infinite;
+  }
+  @keyframes spinner {
+    from {
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+// Success
+
+.suc-title {
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.suc-p {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.suc-go {
+    width: 270px;
+    height: 40px;
+    @include FlexCenter();
+    background-color: $footeremail;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-label2 {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}

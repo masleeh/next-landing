@@ -1,0 +1,86 @@
+.personal {
+    background-color: $back1;
+    width: 100%;
+
+    &-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        margin-top: 80px;
+    }
+
+    &-grid {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 270px 800px;
+        grid-row-gap: 15px;
+
+        &-name {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &-info {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+
+            &:first-child {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+        }
+    }
+
+    &-logout {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+        border-radius: 33px;
+        height: 33px;
+        width: 120px;
+        background-color: $footeremail;
+    }
+
+    &-cancel {
+        margin-left: 20px;
+        width: 185px;
+        height: 35px;
+        @include FlexCenter();
+        background-color: red;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 33px;
+        line-height: 17px;
+    }
+
+    &-row {
+        margin-top: 80px;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .personal-grid {
+        display: flex;
+        flex-direction: column;
+
+        &-name {
+            font-size: 16px;
+        }
+    }
+
+    .personal-title {
+        margin-top: 20px;
+    }
+
+    .personal-cancel {
+        margin-right: auto;
+    }
+
+
+}

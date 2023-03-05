@@ -1,0 +1,91 @@
+.auth-cont {
+    min-height: 500px;
+    height: calc(100vh - 72px - 199px);
+    @include FlexCenter();
+    background-color: $back1;
+}
+
+.auth {
+    max-width: 390px;
+    width: 100%;
+    background-color: #CAE4FD;
+    min-height: 243px;
+    border-radius: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: $maintext;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    &-subtitle {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: $maintext;
+    }
+
+    &-input {
+        max-width: 350px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+        background-color: #fff;
+        height: 50px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+
+        
+    }
+
+    &-send {
+        width: 120px;
+        height: 40px;
+        @include FlexCenter();
+        background-color: $footeremail;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        border-radius: 50px;
+    }
+
+    &-note {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: $subtext;
+        margin-bottom: 25px;
+    }
+
+    &-wrong {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        margin-top: 15px;
+        color: #CE4A4A;
+    }
+}
+
+.number {
+    padding-left: 68px;
+}
+
+.code {
+    padding-left: 132px;
+}
